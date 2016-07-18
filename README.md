@@ -1,5 +1,8 @@
 # TextAnalysis
 
+[![Build Status](https://travis-ci.org/arcanoid/json_to_ruby_class.svg?branch=master)](https://travis-ci.org/arcanoid/text_analysis)
+[![Gem Version](https://badge.fury.io/rb/json_to_ruby_class.svg)](https://badge.fury.io/rb/text_analysis)
+
 A gem that analyzes given text input in useful info 
 
 ## Installation
