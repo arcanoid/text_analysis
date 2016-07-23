@@ -1,10 +1,12 @@
 require "text_analysis/version"
 
 module TextAnalysis
+  ROOT = File.expand_path("../..", __FILE__)
+  
   def self.analyze_text(text_input)
     result = Result.new
 
-    stop_words = File.readlines('data/stop_words/en.txt').map { |word| word.gsub("\n", '') }.inspect
+    stop_words = File.readlines("#{ROOT}/data/stop_words/en.txt").map { |word| word.gsub("\n", '') }.inspect
     input_words = text_input.split(/[\s]+/)
 
     result.total_characters = text_input.length
