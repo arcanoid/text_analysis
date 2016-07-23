@@ -1,3 +1,6 @@
+## 0.2.1 (2016-07-23)
+Fixes bug with loading of stop words file.
+
 ## 0.2.0 (2016-07-22)
 
 New features
