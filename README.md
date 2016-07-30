@@ -23,7 +23,15 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+analyzed_text = TextAnalysis.analyze_text("The quick brown fox jumps over the lazy dog")
+
+# This produces the total number of characters
+analyzed_text.total_characters
+
+# This produces the total number of characters but without taking into consideration any whitespaces found
+analyzed_text.total_characters_without_whitespaces
+```
 
 ## Development
 
@@ -33,7 +41,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/text_analysis. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/arcanoid/text_analysis. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
 
 
 ## License
