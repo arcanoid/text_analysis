@@ -29,8 +29,25 @@ analyzed_text = TextAnalysis.analyze_text("The quick brown fox jumps over the la
 # This produces the total number of characters
 analyzed_text.total_characters
 
-# This produces the total number of characters but without taking into consideration any whitespaces found
+# This produces the total number of characters but without taking 
+# into consideration any whitespaces found
 analyzed_text.total_characters_without_whitespaces
+
+# This produces the total number of words
+analyzed_text.total_words
+
+# This produces the total number of stop words found 
+# (as noted in stop words folder per language)
+analyzed_text.stop_words_found
+
+# This produces an array of words and the referring number of times found in text
+# This list is ordered in descending form.
+analyzed_text.most_common_words
+
+# This produces an array of words and the referring number of times found in text.
+# From this list any stop words set are excluded.
+# This list is ordered in descending form.
+analyzed_text.most_common_non_stop_words
 ```
 
 ## Development
