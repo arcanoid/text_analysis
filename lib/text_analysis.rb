@@ -4,6 +4,8 @@ module TextAnalysis
   ROOT = File.expand_path("../..", __FILE__)
   
   def self.analyze_text(text_input)
+    # TODO: What about punctuation points? ".,?!`)(;:-'
+
     result = Result.new
 
     stop_words = File.readlines("#{ROOT}/data/stop_words/en.txt").map { |word| word.gsub("\n", '') }.inspect
